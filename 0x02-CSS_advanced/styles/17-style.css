@@ -31,8 +31,19 @@
     --section-tagline-transform: uppercase;
     --section-title-margin: 0;
     --section-title-color: var(--color-black);
-}
 
+    --section-padding: 5rem 0;
+    --section-header-padding: 0 0 3rem;
+    --section-body-padding:0 0 3rem;
+    --section-footer-padding:3rem 0 0;
+    --section-footer-align: center;
+    --footer-padding:5rem 0 1rem;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
 
 html {
     scroll-behavior: smooth;
@@ -76,11 +87,23 @@ a:active {
 .card-category {
     color: var(--color-primary);
 }
+.section{
+    padding: var(--section-padding);
+}
 
 .section-header {
     text-align: var(--section-header-align);
+    padding: var(--section-header-padding);
 }
 
+.section-body{
+    padding: var(--section-body-padding);
+}
+
+.section-footer{
+    padding: var(--section-footer-padding);
+    text-align: var(--section-footer-align);
+}
 .section-title {
     font-family: var(--font-family-title);
     font-size: var(--font-size-xx-large);
@@ -94,4 +117,15 @@ a:active {
     font-family: var(--font-family-title);
     text-transform: var(--section-tagline-transform);
     font-weight: var(--font-weight-bold);
+}
+
+.container{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.footer{
+    padding: var(--footer-padding);
 }
